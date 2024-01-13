@@ -1,0 +1,16 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.Rdata
+.httr-oauth
+.DS_Store
+.quarto
+FIGS
+data_cleaning.R
+data_imusa_raw.xls
+serovar.xlsx
+spatial_layers.R
+tab2.docx
+table1.docx
+desktop.ini
