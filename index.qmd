@@ -193,7 +193,7 @@ map <-
 ## Add number of seropositive animals per census tract
 tm_shape(shp = imu_p_ct) +
 tm_bubbles(size = "POS",
-           col = "#FC8D62",
+           #col = "#FC8D62",
            alpha = .8,
            style = "cat",
            group = "seropositives") +
@@ -219,7 +219,8 @@ tm_bubbles(size = "POS",
 tmap_mode("view")
 map %>% 
   tmap_leaflet() |> 
-  leaflet::hideGroup(group = c("hh_nbi","hh_no_tap_water","hh_no_sewage",
+  leaflet::hideGroup(group = c("hh_nbi","hh_no_tap_water",
+                               "hh_no_sewage",
                       "hh_garbage_collection","hh_paved_roads",
                       "clusters", "seropositives"))
 ```
